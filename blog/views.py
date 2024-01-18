@@ -33,14 +33,14 @@ def post_list(request):
 #     publish__day=day)
 #     return render(request,'blog/post/detail.html',{'post': post})
 
-
-class Post(models.Model):
- def get_absolute_url(self):
-    return reverse('blog:post_detail',
-                   args=[self.publish.year,
-                    self.publish.month,
-                    self.publish.day,
-                    self.slug])
+# Test
+# class Post(models.Model):
+#  def get_absolute_url(self):
+#     return reverse('blog:post_detail',
+#                    args=[self.publish.year,
+#                     self.publish.month,
+#                     self.publish.day,
+#                     self.slug])
 
  
  
